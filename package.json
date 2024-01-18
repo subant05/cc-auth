@@ -1,0 +1,30 @@
+{
+  "name": "cc-auth",
+  "version": "1.0.0",
+  "description": "credit card auth",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run index.js",
+    "dev": "nodemon --experimental-modules --es-module-specifier-resolution=node index.js",
+    "lint": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subant05/cc-auth.git"
+  },
+  "author": "Anthony Crawford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subant05/cc-auth/issues"
+  },
+  "homepage": "https://github.com/subant05/cc-auth#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
