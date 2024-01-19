@@ -1,0 +1,18 @@
+.Toast {
+    background-color: white;
+    color:black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.5);
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    min-width:250px;
+    min-height: 50px;
+    text-align: left;
+    padding: 10px;
+    display:none;
+}
+
+.Show {
+    display:block !important;
+}

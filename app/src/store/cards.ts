@@ -4,6 +4,7 @@ import { type CardState } from "../models/types/card-state";
 import { type Dispatch } from "@reduxjs/toolkit";
 import { CardPayloadType } from "../models/types/card-payload";
 import { loaderActions } from "./loading";
+import { messageActions } from "./messages";
 
 const cards = createSlice({
     name:"card",
@@ -40,10 +41,12 @@ export const addAsyncCard = (cardNumber:CardPayloadType) => {
                 throw new Error("Error: " + msg)
             }
 
+            dispatch(messageActions.addMessages([`Card #${cardNumber} is a valid number`]))
             dispatch(cards.actions.addCard(cardNumber))
         } catch(e: any){
             console.error(e.message)
             console.error(e.stack)
+            dispatch(messageActions.addMessages([`Card #${cardNumber} is NOT a valid number`]))
         } finally {
             dispatch(loaderActions.unload())
         }
