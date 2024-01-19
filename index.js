@@ -1,11 +1,7 @@
 import express from "express"
-import dotenv from "dotenv";
-import cluster from "cluster";
-import {cpus} from "node:os"
 import path from "path";
 import ApiRouter from "./api/index.js"
 
-dotenv.config({ path: "./.env" });
 const app = express();
 const __dirname = path.resolve();
 
