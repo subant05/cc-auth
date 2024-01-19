@@ -1,7 +1,9 @@
 # cc-auth
 
-## Install
+## Install Server
 -- npm install
+
+## Install App
 -- cd app && npm install
 
 ## Run server
