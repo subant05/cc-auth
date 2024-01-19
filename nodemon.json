@@ -1,6 +1,6 @@
 {
     "watch": ["*"],
     "ext": ".js",
-    "ignore": ["app", "public"],
-    "exec": "node index.js"
+    "ignore": ["app/build/*", "public"],
+    "exec": " npm run build:app && node index.js"
   }
